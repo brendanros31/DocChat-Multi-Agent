@@ -1,0 +1,30 @@
+# Python / Virtual Environment
+.venv/
+env/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+
+# Project Databases & Caches (Chroma DB & Document Caches)
+chroma_db/
+document_cache/
+*.sqlite3
+
+# Environment Variables & Configuration
+.env
+
+# Application Logs
+app.log
+*.log
+
+# OS-Specific Files
+.DS_Store
+Thumbs.db
+
+# IDE & Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
