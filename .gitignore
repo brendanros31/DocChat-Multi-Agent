@@ -12,6 +12,9 @@ chroma_db/
 document_cache/
 *.sqlite3
 
+# Gradio temporary folders and certificates
+.gradio/
+
 # Environment Variables & Configuration
 .env
 
