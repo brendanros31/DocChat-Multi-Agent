@@ -1,4 +1,4 @@
-# DocChat 🐥
+# DocChat 🍁
 
 DocChat is an advanced, multi-agent Retrieval-Augmented Generation (RAG) system powered by LangGraph, Docling, and Gradio. It allows users to upload documents (PDFs, Word docs, Markdown, text files) or select from pre-loaded technical examples to query and receive fact-checked, verified answers.
 
