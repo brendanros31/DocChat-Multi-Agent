@@ -53,13 +53,20 @@ def main():
     .title {
         font-size: 1.5em !important; 
         text-align: center !important;
-        color: #FFD700; 
-    }    .subtitle {
+        color: #3b82f6; 
+    }
+    .subtitle {
         font-size: 1em !important; 
         text-align: center !important;
-        color: #FFD700; 
-    }    .text {
+        color: #3b82f6; 
+    }
+    .text {
         text-align: center;
+    }
+    /* Force Gradio primary buttons to blue */
+    button.primary, .gr-button-primary {
+        background-color: #3b82f6 !important;
+        border-color: #3b82f6 !important;
     }
     """
 
@@ -71,7 +78,7 @@ def main():
         container.style.fontWeight = 'bold';
         container.style.textAlign = 'center';
         container.style.marginBottom = '20px';
-        container.style.color = '#eba93f';        
+        container.style.color = '#3b82f6';        
         var text = 'Welcome to DocChat 🐥!';
 
         for (var i = 0; i < text.length; i++) {
@@ -94,7 +101,7 @@ def main():
     }
     """
     with gr.Blocks(title="DocChat 🍁") as demo:
-        gr.Markdown("## DocChat: powered by Docling 🐥 and LangGraph")
+        gr.Markdown("## DocChat 🍁 : powered by Docling 🐥 and LangGraph")
         gr.Markdown("# How it works ✨:", elem_classes="title")
         gr.Markdown("📤 Upload your document(s), enter your query then press Submit 📝", elem_classes="text")
         gr.Markdown("Or you can select one of the examples from the drop-down menu, select Load Example then press Submit 📝", elem_classes="text")
@@ -208,7 +215,7 @@ def main():
         server_name="127.0.0.1", 
         server_port=5000, 
         share=False,    # Public host
-        theme=gr.themes.Citrus(),
+        theme=gr.themes.Soft(primary_hue="blue"),
         css=css,
         js=js
     )
