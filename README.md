@@ -1,4 +1,3 @@
-```markdown
 # DocChat 🐥
 
 DocChat is an advanced, multi-agent Retrieval-Augmented Generation (RAG) system powered by LangGraph, Docling, and Gradio. It allows users to upload documents (PDFs, Word docs, Markdown, text files) or select from pre-loaded technical examples to query and receive fact-checked, verified answers.
@@ -28,7 +27,6 @@ DocChat-multi-agent/
 ├── app.py                  # Main Gradio application entry point
 ├── pyproject.toml          # Project dependencies
 └── uv.lock                 # Dependency lockfile
-
 ```
 
 ---
@@ -40,15 +38,14 @@ This project uses **`uv`** for lightning-fast Python package management.
 1. **Clone the repository:**
 ```bash
 git clone [https://github.com/YOUR-USERNAME/DocChat-multi-agent.git](https://github.com/YOUR-USERNAME/DocChat-multi-agent.git)
-cd DocChat-multi-agent
 
+cd DocChat-multi-agent
 ```
 
 
 2. **Install dependencies:**
 ```bash
 uv sync
-
 ```
 
 
@@ -63,7 +60,6 @@ Start the local Gradio development server using `uv`:
 
 ```bash
 uv run app.py
-
 ```
 
 Open your browser and navigate to: **`http://127.0.0.1:5000`**
@@ -73,7 +69,3 @@ Open your browser and navigate to: **`http://127.0.0.1:5000`**
 ## 📜 License
 
 This project is open-source and available under the [MIT License](https://www.google.com/search?q=LICENSE).
-
-```
-
-```
